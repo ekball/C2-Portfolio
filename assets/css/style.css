@@ -1,3 +1,54 @@
+/* Header Styles Start */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-color: orange;
+}
+
+.header h1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    background-color: lavender;
+    padding: 5px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+.header ul li {
+    padding: 15px;
+}
+
+.header ul li a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Hero Styles Start */
+
+.hero {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(../images/hero.jpeg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 img {
     width: 90px;
     height: 90px;
