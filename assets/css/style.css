@@ -1,3 +1,4 @@
+
 /* Header Styles Start */
 
 .header {
@@ -13,9 +14,10 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    margin: 5px;
-    background-color: lavender;
-    padding: 5px;
+    margin: 10px, 30px, 10px, 30px;
+    background-color: peachpuff;
+    padding: 30px;
+    font-size: 48px;
 }
 
 .header ul {
@@ -35,6 +37,8 @@
     text-decoration: none;
 }
 
+/* Header Styles End */
+
 /* Hero Styles Start */
 
 .hero {
@@ -48,6 +52,27 @@
     flex-wrap: wrap;
 }
 
+/* Hero Styles End */
+
+/* About Me Styles Start */
+
+.about-me h1 {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    border-right: black;
+    margin: 15px;
+    padding: 10px;
+}
+
+.about-me p {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    margin: 5px, 5px, 5px, 15px;
+}
+
+/* About Me Styles End */
 
 img {
     width: 90px;
