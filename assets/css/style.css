@@ -1,9 +1,22 @@
+
+
 .flex-left {
     flex: 1;
 }
 
 .flex-right {
     flex: 3;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
+
+h2 {
+    margin: 15px;
+    border-right: 5px solid black;
+    padding: 20px;
 }
 /* Header Styles Start */
 
@@ -67,10 +80,8 @@
     flex-wrap: wrap;
 }
 
-h2 {
-    margin: 15px;
-    border-right: 5px solid black;
-    padding: 20px;
+.about-me p {
+    margin: 20px;
 }
 
 /* About Me Styles End */
@@ -82,29 +93,69 @@ h2 {
     flex-wrap: wrap;
 }
 
+.work h3{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-left: 10px;
+
+}
+
+.work article {
+    margin: 20px;
+}
+
 .horiseon {
-    flex: 1;
-    width: 80%;
-    margin: 0 auto;
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/horiseon-screenshot.png");
+    background-position: top;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+
 }
 
 .run-buddy {
-    flex: 1;
+    height: 200px;
     width: 40%;
-    margin: 0 auto;
+    background-image: url("../images/run-buddy-screenshot.png");
+    background-position: top;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .project-3 {
-    flex: 1;
+    height: 200px;
     width: 40%;
-    margin: 0 auto;
+    background-image: url("../images/run-buddy-screenshot.png");
+    background-position: top;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .project-4 {
-    flex: 2.5;
-    width: 60%;
-    margin: 0 auto;
+    height: 200px;
+    width: 40%;
+    background-image: url("../images/run-buddy-screenshot.png");
+    background-position: top;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex: 2;
 }
+
+
+
+
+
+
+
 /* Work Styles End */
 
 /* Contact Me Styles Start */
@@ -140,7 +191,4 @@ h2 {
 
 
 
-img {
-    width: 90px;
-    height: 90px;
-}
+
