@@ -11,7 +11,7 @@
 
 .header h1 {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     margin: 10px, 30px, 10px, 30px;
@@ -56,23 +56,54 @@
 
 /* About Me Styles Start */
 
-.about-me h1 {
+.about-me {
     display: flex;
-    justify-content: left;
     flex-wrap: wrap;
-    border-right: black;
-    margin: 15px;
-    padding: 10px;
 }
 
-.about-me p {
-    display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
-    margin: 5px, 5px, 5px, 15px;
+h2 {
+    margin: 15px;
+    border-right: 5px solid black;
+    padding: 20px;
 }
 
 /* About Me Styles End */
+
+/* Work Styles Start */
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Work Styles End */
+
+/* Contact Me Styles Start */
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Contact Me Styles End */
+
+/* Resume Styles Start */
+
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Resume Styles End */
+
+.flex-left {
+    flex: 1;
+}
+
+.flex-right {
+    flex: 3;
+}
+
 
 img {
     width: 90px;
