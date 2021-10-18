@@ -1,4 +1,10 @@
+.flex-left {
+    flex: 1;
+}
 
+.flex-right {
+    flex: 3;
+}
 /* Header Styles Start */
 
 .header {
@@ -76,6 +82,29 @@ h2 {
     flex-wrap: wrap;
 }
 
+.horiseon {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.run-buddy {
+    flex: 1;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.project-3 {
+    flex: 1;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.project-4 {
+    flex: 2.5;
+    width: 60%;
+    margin: 0 auto;
+}
 /* Work Styles End */
 
 /* Contact Me Styles Start */
@@ -83,6 +112,18 @@ h2 {
 .contact-me {
     display: flex;
     flex-wrap: wrap;
+}
+
+.contact-me ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+.contact-me ul li {
+    padding: 7px;
 }
 
 /* Contact Me Styles End */
@@ -96,13 +137,7 @@ h2 {
 
 /* Resume Styles End */
 
-.flex-left {
-    flex: 1;
-}
 
-.flex-right {
-    flex: 3;
-}
 
 
 img {
