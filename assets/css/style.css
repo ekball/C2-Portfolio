@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 
 .flex-left {
     flex: 1;
@@ -14,6 +16,7 @@ img {
 }
 
 h2 {
+    font-family: fantasy;
     margin: 15px;
     border-right: 5px solid black;
     padding: 20px;
@@ -29,6 +32,7 @@ h2 {
 }
 
 .header h1 {
+    font-family: fantasy;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -52,6 +56,7 @@ h2 {
 }
 
 .header ul li a {
+    font-family: fantasy;
     font-size: 20px;
     text-decoration: none;
 }
@@ -81,6 +86,7 @@ h2 {
 }
 
 .about-me p {
+    font-family: fantasy;
     margin: 20px;
 }
 
@@ -93,13 +99,15 @@ h2 {
     flex-wrap: wrap;
 }
 
-.work h3{
+.work a{
+    font-family: fantasy;
     display: flex;
     justify-content: left;
     align-items: flex-end;
     flex-wrap: wrap;
     padding-left: 10px;
-
+    text-decoration: none;
+    font-size: 26px;
 }
 
 .work article {
@@ -108,46 +116,44 @@ h2 {
 
 .horiseon {
     height: 200px;
-    width: 100%;
     background-image: url("../images/horiseon-screenshot.png");
     background-position: top;
     display: flex;
     flex-wrap: wrap;
-    flex: 2;
-
+    flex: 2 80%;
 }
 
 .run-buddy {
-    height: 200px;
-    width: 40%;
+    height: 150px;
+    width: 45%;
     background-image: url("../images/run-buddy-screenshot.png");
     background-position: top;
-    display: flex;
+    display: inline-flex;
     justify-content: left;
     flex-wrap: wrap;
     flex: 1;
 }
 
 .project-3 {
-    height: 200px;
-    width: 40%;
+    height: 150px;
+    width: 45%;
     background-image: url("../images/run-buddy-screenshot.png");
     background-position: top;
-    display: flex;
+    display: inline-flex;
     justify-content: left;
     flex-wrap: wrap;
     flex: 1;
 }
 
 .project-4 {
-    height: 200px;
-    width: 40%;
+    height: 150px;
+    width: 45%;
     background-image: url("../images/run-buddy-screenshot.png");
     background-position: top;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    flex: 2;
+    flex: 1.5;
 }
 
 
@@ -161,12 +167,14 @@ h2 {
 /* Contact Me Styles Start */
 
 .contact-me {
-    display: flex;
+    font-family: fantasy;
+    display: inline-flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .contact-me ul {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
@@ -182,6 +190,7 @@ h2 {
 /* Resume Styles Start */
 
 .resume {
+    font-family: fantasy;
     display: flex;
     flex-wrap: wrap;
 }
