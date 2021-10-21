@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 .flex-left {
     flex: 1;
 }
@@ -17,6 +18,7 @@ img {
 
 h2 {
     font-family: fantasy, sans-serif;
+    justify-content: left;
     margin: 15px;
     border-right: 5px solid black;
     padding: 20px;
@@ -70,7 +72,7 @@ h2 {
 .hero {
     height: 200px;
     width: 100%;
-    margin-bottom: 25px;
+    margin: 0;
     background-image: url(../images/hero.jpeg);
     background-position: center;
     display: flex;
@@ -85,11 +87,15 @@ h2 {
 .about-me {
     display: flex;
     flex-wrap: wrap;
+    background-color: peachpuff;
+
 }
 
 .about-me p {
     font-family: fantasy, sans-serif;
     margin: 20px;
+    background-color: peachpuff;
+
 }
 
 /* About Me Styles End */
@@ -99,6 +105,8 @@ h2 {
 .work {
     display: flex;
     flex-wrap: wrap;
+    background-color: peachpuff;
+
 }
 
 .work a {
@@ -177,7 +185,6 @@ h2 {
     flex: 1;
 }
 
-
 /* Work Styles End */
 
 /* Contact Me Styles Start */
@@ -185,9 +192,15 @@ h2 {
 .contact-me {
     font-family: fantasy, sans-serif;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    background-color: peachpuff;
 }
+
+.contact-me h2 {
+    padding: 0 175px 0 20px;
+}
+
+
 
 .contact-me ul {
     display: inline-flex;
@@ -197,20 +210,130 @@ h2 {
 }
 
 .contact-me ul li {
-    padding: 7px;
+    padding: 0 80px 0 80px;
 }
 
 /* Contact Me Styles End */
 
-/* Resume Styles Start */
 
-.resume {
-    font-family: fantasy;
-    display: flex;
-    flex-wrap: wrap;
+
+/* Media Queries */
+
+/* Media Query For Smaller Desktop Screens & Smaller */
+@media screen and (max-width: 980px) {
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100px;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+
+    .hero-cta {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .trainer {
+        flex: 0 70%;
+    }
+
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+
 }
 
-/* Resume Styles End */
+/* Media Query For Tablets & Smaller */
+@media screen and (max-width: 768px) {
+    
+    section {
+        padding: 30px 15px;
+    }
+
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .step-text {
+        flex: 100%;
+    }
+
+}
+
+/* Media Query For Mobile Phones & Smaller */
+@media screen and (max-width: 575px) {
+    
+        .hero-form button {
+            width: 100%;
+        }
+
+        .section-title {
+            width: 95%;
+        }
+    
+        .intro p {
+            width: 100%;
+        }
+
+        .trainer {
+            flex: 0 100%;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info > * {
+            flex: 0 100%;
+
+        }
+
+        .contact-form {
+            order: 3;
+        }
+}
+
 
 
 
