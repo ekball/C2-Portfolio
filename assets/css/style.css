@@ -16,26 +16,30 @@ img {
 }
 
 h2 {
-    font-family: fantasy;
+    font-family: fantasy, sans-serif;
     margin: 15px;
     border-right: 5px solid black;
     padding: 20px;
 }
+
 /* Header Styles Start */
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     top: 0;
     background-color: orange;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .header h1 {
-    font-family: fantasy;
+    font-family: fantasy, sans-serif;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: right;
     flex-wrap: wrap;
     margin: 10px, 30px, 10px, 30px;
     background-color: peachpuff;
@@ -45,9 +49,7 @@ h2 {
 
 .header ul {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
     list-style: none;
 }
 
@@ -56,7 +58,7 @@ h2 {
 }
 
 .header ul li a {
-    font-family: fantasy;
+    font-family: fantasy, sans-serif;
     font-size: 20px;
     text-decoration: none;
 }
@@ -86,7 +88,7 @@ h2 {
 }
 
 .about-me p {
-    font-family: fantasy;
+    font-family: fantasy, sans-serif;
     margin: 20px;
 }
 
@@ -99,8 +101,9 @@ h2 {
     flex-wrap: wrap;
 }
 
-.work a{
-    font-family: fantasy;
+.work a {
+    color: orange;
+    font-family: fantasy, sans-serif;
     display: flex;
     justify-content: left;
     align-items: flex-end;
@@ -110,24 +113,34 @@ h2 {
     font-size: 26px;
 }
 
+.work a:hover {
+    color: darkgray;
+}
+
 .work article {
+    display: inline-flex;
+    flex-wrap: wrap;
     margin: 20px;
+    background-position: center;
+}
+
+.work article:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .horiseon {
-    height: 200px;
-    background-image: url("../images/horiseon-screenshot.png");
-    background-position: top;
+    height: 230px;
+    width: 94%;
+    background-image: url("../images/project-1-background.jpeg");
     display: flex;
     flex-wrap: wrap;
-    flex: 2 80%;
+    flex: 3;
 }
 
 .run-buddy {
     height: 150px;
     width: 45%;
-    background-image: url("../images/run-buddy-screenshot.png");
-    background-position: top;
+    background-image: url("../images/project-2-background.jpeg");
     display: inline-flex;
     justify-content: left;
     flex-wrap: wrap;
@@ -137,8 +150,7 @@ h2 {
 .project-3 {
     height: 150px;
     width: 45%;
-    background-image: url("../images/run-buddy-screenshot.png");
-    background-position: top;
+    background-image: url("../images/project-3-background.jpeg");
     display: inline-flex;
     justify-content: left;
     flex-wrap: wrap;
@@ -148,18 +160,22 @@ h2 {
 .project-4 {
     height: 150px;
     width: 45%;
-    background-image: url("../images/run-buddy-screenshot.png");
-    background-position: top;
-    display: flex;
+    background-image: url("../images/project-4-background.jpeg");
+    display: inline-flex;
     justify-content: left;
     flex-wrap: wrap;
-    flex: 1.5;
+    flex: 1;
 }
 
-
-
-
-
+.project-5 {
+    height: 150px;
+    width: 45%;
+    background-image: url("../images/project-5-background.jpeg");
+    display: inline-flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex: 1;
+}
 
 
 /* Work Styles End */
@@ -167,15 +183,14 @@ h2 {
 /* Contact Me Styles Start */
 
 .contact-me {
-    font-family: fantasy;
-    display: inline-flex;
-    justify-content: space-between;
+    font-family: fantasy, sans-serif;
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .contact-me ul {
     display: inline-flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
