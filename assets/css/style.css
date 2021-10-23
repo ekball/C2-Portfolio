@@ -77,6 +77,15 @@ header ul li a {
     flex-wrap: wrap;
 }
 
+img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+    width: 100px;
+}
+
 /* Hero Styles End */
 
 /* About Me Styles Start */
@@ -233,7 +242,12 @@ header ul li a {
     body h2 {
         font-size: 24px;
         border-right: 5px solid black;
+        justify-content: left;
     }
+
+    /* Hero Styles Start */
+
+    /* Hero Styles End */
 
     /* Header Styles End */
 
@@ -378,10 +392,9 @@ header ul li a {
 
     /* About Me Styles Start */
 
-    .contact-me ul li a {
-        font-size: 35px;
+    .about-me p {
+        width: 300px;
     }
-
     /* About Me Styles End */
 
     /* Work Styles End */
@@ -395,8 +408,17 @@ header ul li a {
 /* Media Query For Mobile Phones & Smaller */
 @media screen and (max-width: 575px) {
     
-   
-    
+    body h2 {
+        font-size: 46px;
+    }
+
+
+    /* About Me Styles Start */
+
+    .about-me p {
+        width: 300px;
+    }
+    /* About Me Styles End */
 
 
 
