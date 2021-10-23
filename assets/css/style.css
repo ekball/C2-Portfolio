@@ -17,7 +17,7 @@ body {
 }
 
 h2 {
-    justify-content: left;
+    justify-content: center;
     margin: 15px;
     border-right: 5px solid black;
     padding: 20px;
@@ -25,7 +25,7 @@ h2 {
 
 /* Header Styles Start */
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,7 @@ h2 {
     margin-bottom: 0;
 }
 
-.header h1 {
+header h1 {
     display: flex;
     justify-content: flex-start;
     align-items: right;
@@ -47,17 +47,17 @@ h2 {
     font-size: 48px;
 }
 
-.header ul {
+header ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
 
-.header ul li {
+header ul li {
     padding: 15px;
 }
 
-.header ul li a {
+header ul li a {
     font-size: 24px;
     text-decoration: none;
 }
@@ -110,11 +110,8 @@ h2 {
     font-size: 26px;
 }
 
-.work a:hover {
-    color: darkgray;
-}
-
 .work article {
+    border: solid 6px orange;
     display: inline-flex;
     flex-wrap: wrap;
     margin: 20px;
@@ -122,6 +119,7 @@ h2 {
 }
 
 .work article:hover {
+    opacity: 95%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -190,8 +188,6 @@ h2 {
     list-style: none;
 }
 
-
-
 /* Contact Me Styles End */
 
 
@@ -201,8 +197,23 @@ h2 {
 /* Media Query For Smaller Desktop Screens & Smaller */
 @media screen and (max-width: 980px) {
 
+    body h2 {
+        font-size: 28px;
+    }
 
+    header h1 {
+        margin: 10px;
+        padding: 15px;
+    }
 
+    header ul li a {
+        font-size: 30px;
+    }
+
+    .about-me p {
+        font-size: 21px;
+    }
+ 
 
 
 
@@ -212,6 +223,18 @@ h2 {
 /* Media Query For Tablets & Smaller */
 @media screen and (max-width: 768px) {
     
+    body h2 {
+        font-size: 32px;
+    }
+
+    header h1 {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    header ul li a {
+        font-size: 35px;
+    }
 
 
 
@@ -222,6 +245,18 @@ h2 {
 /* Media Query For Mobile Phones & Smaller */
 @media screen and (max-width: 575px) {
     
+    body h2 {
+        font-size: 36px;
+    }
+
+    header h1 {
+        margin: 0;
+        padding: 5px;
+    }
+
+    header ul li a {
+        font-size: 35px;
+    }
 
 
 
