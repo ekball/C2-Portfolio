@@ -108,6 +108,7 @@ header ul li a {
     padding-left: 10px;
     text-decoration: none;
     font-size: 26px;
+    font-weight: 900;
 }
 
 .work article {
@@ -126,49 +127,70 @@ header ul li a {
 .horiseon {
     height: 230px;
     width: 94%;
-    background-image: url("../images/project-1-background.jpeg");
     display: flex;
     flex-wrap: wrap;
+}
+
+.horiseon a {
+    background: 100%;
+    background-image: url("../images/project-1-background.jpeg");
     flex: 3;
 }
 
 .run-buddy {
     height: 150px;
     width: 45%;
-    background-image: url("../images/project-2-background.jpeg");
     display: inline-flex;
     justify-content: left;
     flex-wrap: wrap;
-    flex: 1;
+}
+
+.run-buddy a {
+    background: 100%;
+    background-image: url("../images/project-2-background.jpeg");
+    flex: 3;
 }
 
 .project-3 {
     height: 150px;
     width: 45%;
-    background-image: url("../images/project-3-background.jpeg");
     display: inline-flex;
     justify-content: left;
     flex-wrap: wrap;
-    flex: 1;
+}
+
+.project-3 a {
+    background: 100%;
+    background-image: url("../images/project-3-background.jpeg");
+    flex: 3;
 }
 
 .project-4 {
     height: 150px;
     width: 45%;
-    background-image: url("../images/project-4-background.jpeg");
     display: inline-flex;
     justify-content: left;
     flex-wrap: wrap;
-    flex: 1;
+}
+
+.project-4 a {
+    background: 100%;
+    background-image: url("../images/project-4-background.jpeg");
+    flex: 3;
 }
 
 .project-5 {
     height: 150px;
     width: 45%;
-    background-image: url("../images/project-5-background.jpeg");
     display: inline-flex;
     justify-content: left;
     flex-wrap: wrap;
+}
+
+.project-5 a {
+    background: 100%;
+    background-image: url("../images/project-5-background.jpeg");
+    flex: 3;
 }
 
 /* Work Styles End */
@@ -181,11 +203,21 @@ header ul li a {
 }
 
 .contact-me ul {
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+}
+
+.contact-me ul li {
+    padding: 15px;
+}
+
+.contact-me ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
 }
 
 /* Contact Me Styles End */
@@ -194,70 +226,177 @@ header ul li a {
 
 /* Media Queries */
 
-/* Media Query For Smaller Desktop Screens & Smaller */
-@media screen and (max-width: 980px) {
+/* Media Query For Small Desktop Screens & Smaller */
+@media screen and (max-width: 1205px) {
+
 
     body h2 {
-        font-size: 28px;
+        font-size: 24px;
+        border-right: 5px solid black;
     }
+
+    /* Header Styles End */
 
     header h1 {
         margin: 10px;
         padding: 15px;
+        font-size: 40px;
     }
 
     header ul li a {
-        font-size: 30px;
+        font-size: 24px;
+    }
+ 
+    /* Header Styles End */
+
+    /* Work Styles Start */
+
+    .work h2 {
+        padding: 18px;
+        margin: 18px;
+    }
+
+    .run-buddy, .project-3, .project-4, .project-5 {
+        font-weight: 800;
+        display: flex;
+        justify-content: right;
+        width: 94%;
+        flex-wrap: wrap;
+    }
+
+    /* Work Styles End */
+
+}
+
+
+
+
+
+/* Media Query For Even Smaller Desktop Screens & Smaller */
+@media screen and (max-width: 980px) {
+
+    body h2 {
+        font-size: 32px;
+    }
+ 
+    /* Header Styles End */
+
+    header h1 {
+        margin: 10px;
+        padding: 15px;
+        font-size: 50px;
+    }
+ 
+    /* Header Styles End */
+
+    /* About Me Styles Start */
+
+    .about-me {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .about-me h2 {
+        padding: 5px;
+        border: none;
+        border-bottom: solid 3px navy;
+        margin: 5px;
     }
 
     .about-me p {
         font-size: 21px;
     }
- 
+    
+    /* About Me Styles End */
 
+    /* Work Styles Start */
 
+    .work {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
 
+    .work h2 {
+        padding: 5px;
+        border: none;
+        border-bottom: solid 3px navy;
+        margin: 5px;
+    }
+
+    .run-buddy, .project-3, .project-4, .project-5 {
+        display: flex;
+        width: 94%;
+        flex-wrap: wrap;
+    }
+
+    /* Work Styles End */
+
+    /* Contact Me Styles Start */
+
+    .contact-me {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .contact-me h2 {
+        padding: 5px;
+        border: none;
+        border-bottom: solid 3px navy;
+        margin: 5px;
+    }
+
+    .contact-me ul li a {
+        font-size: 18px;
+    }
+
+    /* Contact Me Styles End */
 
 }
+
+
+
 
 /* Media Query For Tablets & Smaller */
 @media screen and (max-width: 768px) {
     
     body h2 {
-        font-size: 32px;
+        font-size: 36px;
     }
+ 
+    /* Header Styles End */
 
     header h1 {
-        margin: 5px;
-        padding: 10px;
+        margin: 10px;
+        padding: 15px;
+        font-size: 60px;
     }
+ 
+    /* Header Styles End */
 
-    header ul li a {
+    /* About Me Styles Start */
+
+    .contact-me ul li a {
         font-size: 35px;
     }
 
+    /* About Me Styles End */
+
+    /* Work Styles End */
 
 
 
+    /* Work Styles End */
 
 }
 
 /* Media Query For Mobile Phones & Smaller */
 @media screen and (max-width: 575px) {
     
-    body h2 {
-        font-size: 36px;
-    }
-
-    header h1 {
-        margin: 0;
-        padding: 5px;
-    }
-
-    header ul li a {
-        font-size: 35px;
-    }
-
+   
+    
 
 
 
