@@ -141,8 +141,9 @@ img {
 }
 
 .horiseon a {
-    background: 100%;
-    background-image: url("../images/project-1-background.jpeg");
+    background-position: top left;
+    background-size: 110%;
+    background-image: url("../images/run-buddy-screenshot.png");
     flex: 3;
 }
 
@@ -225,7 +226,7 @@ img {
 
 .contact-me ul li a {
     font-size: 16px;
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 
@@ -282,10 +283,6 @@ img {
 
 }
 
-
-
-
-
 /* Media Query For Even Smaller Desktop Screens & Smaller */
 @media screen and (max-width: 980px) {
 
@@ -314,7 +311,7 @@ img {
     .about-me h2 {
         padding: 5px;
         border: none;
-        border-bottom: solid 3px navy;
+        border-bottom: solid 3px black;
         margin: 5px;
     }
 
@@ -335,7 +332,7 @@ img {
     .work h2 {
         padding: 5px;
         border: none;
-        border-bottom: solid 3px navy;
+        border-bottom: solid 3px black;
         margin: 5px;
     }
 
@@ -358,7 +355,7 @@ img {
     .contact-me h2 {
         padding: 5px;
         border: none;
-        border-bottom: solid 3px navy;
+        border-bottom: solid 3px black;
         margin: 5px;
     }
 
@@ -397,12 +394,6 @@ img {
     }
     /* About Me Styles End */
 
-    /* Work Styles End */
-
-
-
-    /* Work Styles End */
-
 }
 
 /* Media Query For Mobile Phones & Smaller */
@@ -411,7 +402,6 @@ img {
     body h2 {
         font-size: 46px;
     }
-
 
     /* About Me Styles Start */
 
