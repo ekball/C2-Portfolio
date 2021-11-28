@@ -169,8 +169,8 @@ img {
 }
 
 .project-3 a {
-    background: 100%;
-    background-image: url("../images/project-3-background.jpeg");
+    background: 50%;
+    background-image: url("../images/movie-match-screenshot.png");
     flex: 3;
 }
 
